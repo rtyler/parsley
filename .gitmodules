@@ -1,0 +1,3 @@
+[submodule "thirdparty/yajl"]
+	path = thirdparty/yajl
+	url = git://github.com/lloyd/yajl.git
