@@ -1,21 +1,22 @@
 #ifndef UTIL_H_INCLUDED
 #define UTIL_H_INCLUDED
 
-#include <stdio.h>
+#include <ctype.h>
+#include <errno.h>
 #include <json/json.h>
+#include <json/printbuf.h>
+#include <libexslt/exslt.h>
+#include <libxml/xmlIO.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 #include "parsed_xpath.h"
 #include "parsley.h"
 #include "parser.h"
 #include "regexp.h"
-#include <json/printbuf.h>
 #include "functions.h"
-#include <stdio.h>
-#include <string.h>
-#include <errno.h>
-#include <stdbool.h>
-#include <ctype.h>
-#include <libexslt/exslt.h>
-#include <libxml/xmlIO.h>
 
 FILE* parsley_fopen(char*, char*);
 xmlNodePtr new_stylesheet_skeleton(char *incl);
